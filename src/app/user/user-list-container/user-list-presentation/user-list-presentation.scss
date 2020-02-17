@@ -1,0 +1,88 @@
+img {
+    border-radius: 50%;
+    width: 35px;
+  }
+  .pointer{
+      cursor: pointer;
+  };
+  .pointerGreen:hover{
+      color: green;
+      cursor: pointer;
+  }
+  .pointerBlue:hover{
+    color: blue;
+    cursor: pointer;
+}
+.pointerRed:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.div:focus {
+    background-color: black;
+    color: white;
+}
+
+.div:hover {
+    border-bottom: 3px solid #0b8152;
+    border-right: 3px solid #0b8152;
+}
+
+.showMore{
+    font-size: 14px;
+    display:block;
+    cursor: pointer;
+    
+  }
+  .showMore + .p{
+    display:none;
+  }
+  .showMore + .p+ *{
+    display:none;
+  }
+  .showMore:hover{
+    font-size: 24px;
+    display:none;
+  }
+
+  .container {
+    position: relative;
+    border-bottom: 1px solid #062d36;
+    border-radius: 10%;
+    padding: 10px;
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .container:hover .image {
+    opacity: 0.3;
+  }
+  
+  .container:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
